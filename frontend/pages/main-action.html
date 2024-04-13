@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/styleaction.css">
+    <link type="image/x-icon" href="../images/icons.ico" rel="shortcut icon">
+    <title>New Horizons</title>
+</head>
+
+<body>
+    <div class="navigation-container">
+        <div class="navigation">
+            <div class="head">
+                <h1>New Horizons</h1>
+            </div>
+            <div class="nav-bar-left">
+                <ul class="full-menu">
+                    <li>
+                        <div class="menu"><a href="ListCar.html">Автомобили</a></div>
+                    </li>
+                    <li>
+                        <ul class="menu-down">
+                            <li><a href="#" class="pull">Владельцам</a>
+                                <ul>
+                                    <li><a href="service.html">Cервис</a></li>
+                                    <li><a href="guarantee.html">Гарантия</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="menu-down">
+                            <li><a href="#" class="pull">О нас</a>
+                                <ul>
+                                    <li><a href="company.html">Компания</a></li>
+                                    <li><a href="contact.html">Контакты</a></li>
+                                    <li><a href="feedback.html">Отзывы</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-bar-right">
+                <ul class="profile-menu">
+                    <li>
+                        <div class="profile"><img src="../images/profile.png"></div>
+                        <ul>
+                            <li><a href="profile.html">Профиль</a></li>
+                            <li><a id="exit" href="http://newhorizons">Выход</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="clock" class="clock"></div>
+        </div>
+
+    </div>
+    </div>
+    <div class="main-container">
+        <div class="photo-main">
+            <img src="../images/mainphoto.jpg">
+            <div class="info-photo">
+                <h2 style="font-size: 25pt;">Новинки нашей кампании <br> "New Horizons"</br>
+                </h2>
+                <button onclick="document.location.href ='cars/car1.html'">Узнать больше</button>
+            </div>
+        </div>
+
+        <div class="photo-main-mobile">
+            <img src="../images/mainphoto2.jpeg">
+            <div class="info-photo">
+                <h2 style="font-size: 25pt;">Новинки нашей кампании <br> "New Horizons"</br>
+                </h2>
+                <button onclick="document.location.href ='cars/car1.html'">Узнать больше</button>
+            </div>
+        </div>
+
+        <div class="photo">
+            <div class="markup">
+                <div class="partial-img-text">
+                    <div class="text-photo">
+                        <div class="inf">
+                            <h2 style="font-size: 25pt;">Покоряйте горизонты с <br> "New Horizons"</br>
+                            </h2>
+                            <button onclick="document.location.href ='ListCar.html'">Узнать больше</button>
+                        </div>
+                        <span>
+							<img src="../images/photo5.jpg">
+						</span>
+                    </div>
+                </div>
+
+
+                <div class="partial-img-text">
+                    <div class="text-photo">
+                        <div class="inf">
+                            <h2 style="font-size: 25pt;">Легенды на четырех колесах</h2>
+                            <button onclick="document.location.href ='cars/car2.html'">Узнать больше</button>
+                        </div>
+                        <span>
+							<img src="../images/photo1.jpg">
+						</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="item">
+                <a class="previous" onclick="previousSlide()">&#10094;</a>
+                <div class="fl">
+                    <div class="item_col">
+                        <h2 class="slider-text">Откройте для себя удовольствие от вождения с нашей коллекцией машин</h2>
+                        <h3 class="slider-text">Независимо от того, какой стиль и цвет вам нравится, у нас есть автомобиль, который подойдет именно вам.</h3>
+                        <button class="btn">Перейти</button>
+                    </div>
+                    <img src="../images/sliderphoto1.jpg" alt="">
+                </div>
+                <a class="next" onclick="nextSlide()">&#10095;</a>
+            </div>
+
+            <div class="item">
+                <a class="previous" onclick="previousSlide()">&#10094;</a>
+                <div class="fl">
+                    <div class="item_col">
+                        <h2 class="slider-text">Безопасность на дороге - это наш приоритет</h2>
+                        <h3 class="slider-text">Наша коллекция автомобилей обеспечит вам не только комфорт, но и безопасность на каждом этапе поездки.</h3>
+                    </div>
+                    <img src="../images/sliderphoto2.jpg" alt="">
+                </div>
+                <a class="next" onclick="nextSlide()">&#10095;</a>
+            </div>
+
+            <div class="item">
+                <a class="previous" onclick="previousSlide()">&#10094;</a>
+                <div class="fl">
+                    <div class="item_col">
+                        <h2 class="slider-text">Новые технологии и стильный дизайн</h2>
+                        <h3 class="slider-text">Путешествуйте с комфортом и наслаждайтесь каждой минутой наших автомобилей.</h3>
+                        <button class="btn">Перейти</button>
+                    </div>
+                    <img src="../images/sliderphoto3.jpg" alt="">
+                </div>
+
+                <a class="next" onclick="nextSlide()">&#10095;</a>
+            </div>
+
+            <div class="arrow_mobile">
+                <a class="previous_mobile" onclick="previousSlide()">&#10094;</a>
+                <a class="next_mobile" onclick="nextSlide()">&#10095;</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="btn-up btn-up_hide"></div>
+
+    <footer>
+        <div class="social-media">
+            <h4>New Horizons в социальных сетях</h4>
+            <ul>
+                <li>
+                    <a href=""><img src="../images/social/free-icon-instagram-2111463.png"></a>
+                </li>
+                <li>
+                    <a href=""><img src="../images/social/free-icon-telegram-3670070.png"></a>
+                </li>
+                <li>
+                    <a href=""><img src="../images/social/free-icon-vkontakte-4494517.png"></a>
+                </li>
+                <li>
+                    <a href=""><img src="../images/social/free-icon-youtube-4494485.png"></a>
+                </li>
+                <div class="footer-col"></div>
+            </ul>
+        </div>
+        <div class="footer-info">
+            <div class="block">
+                <h4>Автомобили</h4>
+                <ul>
+                    <li><a href="ListCar.html">Выбор автомобиля</a></li>
+                </ul>
+            </div>
+            <div class="block">
+                <h4>Владельцам</h4>
+                <ul>
+                    <li><a href="service.html">Cервис</a></li>
+                    <li><a href="guarantee.html">Гарантия</a></li>
+                </ul>
+            </div>
+            <div class="block">
+                <h4>О нас</h4>
+                <ul>
+                    <li><a href="company.html">Компания</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                    <li><a href="feedback.html">Отзывы</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/localStorage.js"></script>
+    <script src="../js/slider.js"></script>
+    <script src="../js/scroll.js"></script>
+    <script src="../js/clearToken.js"></script>
+    <script src="../js/clock.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link type="image/x-icon" href="../images/icons.ico" rel="shortcut icon">
+	<title>New Horizons</title>
+</head>
+<body>
+	<div class="navigation-container">
+		<div class="navigation">
+			<div class="head"><h1>New Horizons</h1></div>
+			<div class="nav-bar-left">
+				<ul class="full-menu">
+					<li>
+						<div class="menu"><a href="" onclick="alert('Войдите на сайт')">Автомобили</a></div>
+					</li>
+					<li>
+						<ul class="menu-down">
+							<li><a href="#" class="pull">Владельцам</a>
+								<ul>
+									<li><a href="" onclick="alert('Войдите на сайт')">Cервис</a></li>
+									<li><a href="" onclick="alert('Войдите на сайт')">Гарантия</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="menu-down">
+							<li><a href="#" class="pull">О нас</a>
+								<ul>
+									<li><a href="" onclick="alert('Войдите на сайт')">Компания</a></li>
+									<li><a href="" onclick="alert('Войдите на сайт')">Контакты</a></li>
+									<li><a href="" onclick="alert('Войдите на сайт')">Отзывы</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="nav-bar-right">
+				<div class="modal-login">
+					<button class="login" onclick="document.getElementById('id01').style.display='block'" style="width: auto;">Вход</button>
+					<div id="id01" class="modal">
+						<form id="auth-form" class="modal-content animate" method="POST" action="http://newhorizons/backend/Controller/RegistrationController/auth">
+							<div class="imgcontainer">
+								<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">x</span>
+							</div>
+							<div class="container">
+								<div class="input-box">
+									<label for="uname"><b>Логин</b></label><p></p>
+									<input type="text" placeholder="Введите логин" id="login" name="login" required><p></p>
+								</div>
+								<div class="input-box">
+									<label for="psw"><b>Пароль</b></label><p></p>
+									<input type="password" placeholder="Введите пароль" id="password" name="password" required><p></p>
+								</div>
+								<div class="buttons">
+									<button type="submit" value="Submit" onclick="">Вход</button>
+									<label>
+										<input type="checkbox" checked="checked" name="remember"> Запомнить меня
+									</label>
+								</div>
+							</div>
+
+							<div class="container-bottom" style="background-color: #f1f1f1;">
+								<div class="txt">
+									<span>Вы ещё не зарегистрированы? <a href="#">РЕГИСТРАЦИЯ</a></span>
+									<span class="psw">Забыли <a href="#">пароль?</a></span>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="modal-signup">
+					<button class="signup" onclick="document.getElementById('id02').style.display='block'" style="width: auto;">Регистрация</button>
+					<div id="id02" class="modal">
+						<form id="registration-form" class="modal-content animate" method="POST" action="http://newhorizons/backend/Controller/RegistrationController/registration">
+							<div class="imgcontainer">
+								<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">x</span>
+							</div>
+							<div class="container">
+								<div class="container-reg">
+									<div class="input-box">
+										<label for="name"><b>ФИО</b></label><p></p>
+										<input type="text" placeholder="Введите ФИО" name="full_name" required><p></p>
+									</div>
+
+									<div class="input-box">
+										<label for="mail"><b>Электронная почта</b></label><p></p>
+										<input type="email" placeholder="Введите электронную почту" name="email" required><p></p>
+									</div>
+
+									<div class="input-box">
+										<label for="uname"><b>Логин</b></label><p></p>
+										<input type="text" placeholder="Введите логин" name="login" required><p></p>
+									</div>
+
+									<div class="input-box">
+										<label for="psw"><b>Пароль</b></label><p></p>
+										<input type="password" placeholder="Введите пароль" id="input_test" name="password" required>
+										<div id="block_check"></div>
+									</div>
+									<div class="input-box">
+										<label for="town"><b>Город</b></label><p></p>
+										<input type="text" placeholder="Введите город" name="town" required><p></p>
+									</div>
+									<div class="input-box">
+										<label for="region"><b>Регион</b></label><p></p>
+										<input type="text" placeholder="Введите регион" name="region" required><p></p>
+									</div>
+									<div class="input-box">
+										<label for="postal_code"><b>Почтовый индекс</b></label><p></p>
+										<input type="text" placeholder="Введите почтовый индекс" name="postal_code" required><p></p>
+									</div>
+									<div class="input-box">
+										<label for="country"><b>Страна</b></label><p></p>
+										<select id="country" name="country">
+											<option value="">...</option>
+											<option value="США">США</option>
+											<option value="Канада">Канада</option>
+											<option value="Россия">Россия</option>
+											<option value="Великобритания">Великобритания</option>
+											<option value="Франция">Франция</option>
+											<option value="Германия">Германия</option>
+										</select>
+									</div>
+
+									<div class="reg">
+										<button type="submit">Зарегистрировать</button><p></p>
+										<span>Если вы зарегистрированы,<br> то выполните <a href="#">Вход</a></span>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="clock" class="clock"></div>
+		</div>
+
+	</div>
+	<div class="main-container">
+		<div class="photo-main">
+			<img src="../images/mainphoto.jpg" >
+			<div class="info-photo">
+				<h2 style="font-size: 25pt;">Новинки нашей кампании <br> "New Horizons"</br></h2>
+				<button onclick="alert('Войдите на сайт')">Узнать больше</button>
+			</div>
+		</div>
+
+		<div class="photo-main-mobile">
+			<img src="../images/mainphoto2.jpeg" >
+			<div class="info-photo">
+				<h2 style="font-size: 25pt;">Новинки нашей кампании <br> "New Horizons"</br></h2>
+				<button onclick="alert('Войдите на сайт')">Узнать больше</button>
+			</div>
+		</div>
+
+		<div class="photo">
+			<div class="markup">
+
+				<div class="partial-img-text">
+					<div class="text-photo">
+						<div class="inf">
+							<h2 style="font-size: 25pt;">Покоряйте горизонты с <br> "New Horizons"</br></h2>
+							<button onclick="alert('Войдите на сайт')">Узнать больше</button>
+						</div>
+						<span>
+							<img src="../images/photo5.jpg">
+						</span>
+					</div>
+				</div>
+				
+
+				<div class="partial-img-text">
+					<div class="text-photo">
+						<div class="inf">
+							<h2 style="font-size: 25pt;">Легенды на четырех колесах</h2>
+							<button onclick="alert('Войдите на сайт')">Узнать больше</button>
+						</div>
+						<span>
+							<img src="../images/photo1.jpg">
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="slider">
+	        <div class="item">
+	            <a class="previous" onclick="previousSlide()">&#10094;</a>
+	            <div class="fl">
+	            	<div class="item_col">
+		            	<h2 class="slider-text">Откройте для себя удовольствие от вождения с нашей коллекцией машин</h2>
+		            	<h3 class="slider-text">Независимо от того, какой стиль и цвет вам нравится, у нас есть автомобиль, который подойдет именно вам.</h3> 
+		            	<button class="btn">Перейти</button>
+		            </div>           
+		            <img src="../images/sliderphoto1.jpg" alt="">
+	            </div>
+	            <a class="next" onclick="nextSlide()">&#10095;</a>
+	        </div>
+
+	        <div class="item">
+	            <a class="previous" onclick="previousSlide()">&#10094;</a>
+	            <div class="fl">
+	            	<div class="item_col">
+		               <h2 class="slider-text">Безопасность на дороге - это наш приоритет</h2>
+		               <h3 class="slider-text">Наша коллекция автомобилей обеспечит вам не только комфорт, но и безопасность на каждом этапе поездки.</h3> 
+		            </div>
+		            <img src="../images/sliderphoto2.jpg" alt="">
+	            </div>          
+	            <a class="next" onclick="nextSlide()">&#10095;</a>
+	        </div>
+
+	        <div class="item">
+	            <a class="previous" onclick="previousSlide()">&#10094;</a>
+	            <div class="fl">
+	            	<div class="item_col">
+		               <h2 class="slider-text">Новые технологии и стильный дизайн</h2>
+		               <h3 class="slider-text">Путешествуйте с комфортом и наслаждайтесь каждой минутой наших автомобилей.</h3> 
+		               <button class="btn">Перейти</button>
+		            </div>
+		            <img src="../images/sliderphoto3.jpg" alt=""> 
+	            </div>      
+	            
+	            <a class="next" onclick="nextSlide()">&#10095;</a>
+	        </div>
+	        
+	        <div class="arrow_mobile">
+	            <a class="previous_mobile" onclick="previousSlide()">&#10094;</a>
+	            <a class="next_mobile" onclick="nextSlide()">&#10095;</a>
+	        </div>
+	        
+	    </div>
+	</div>
+
+	<div class="btn-up btn-up_hide"></div>
+
+	<footer>
+		<div class="social-media">
+				<h4>New Horizons в социальных сетях</h4>
+				<ul>
+					<li><a href=""><img src="../images/social/free-icon-instagram-2111463.png"></a></li>
+					<li><a href=""><img src="../images/social/free-icon-telegram-3670070.png"></a></li>
+					<li><a href=""><img src="../images/social/free-icon-vkontakte-4494517.png"></a></li>
+					<li><a href=""><img src="../images/social/free-icon-youtube-4494485.png"></a></li>
+					<div class="footer-col"></div>
+				</ul>
+		</div>
+		<div class="footer-info">
+			<div class="block">
+				<h4>Автомобили</h4>
+				<ul>
+					<li><a href="" onclick="alert('Войдите на сайт')">Выбор автомобиля</a></li>
+				</ul>
+			</div>
+			<div class="block">
+				<h4>Владельцам</h4>
+				<ul>
+					<li><a href="" onclick="alert('Войдите на сайт')">Cервис</a></li>
+					<li><a href="" onclick="alert('Войдите на сайт')">Гарантия</a></li>
+				</ul>
+			</div>
+			<div class="block">
+				<h4>О нас</h4>
+				<ul>
+					<li><a href="" onclick="alert('Войдите на сайт')">Компания</a></li>
+					<li><a href="" onclick="alert('Войдите на сайт')">Контакты</a></li>
+					<li><a href="" onclick="alert('Войдите на сайт')">Отзывы</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+<script src="../js/slider.js"></script>
+<script src="../js/Queries/authQuery.js"></script>
+<script src="../js/Queries/registrationQuery.js"></script>
+<script src="../js/scroll.js"></script>
+<script src="../js/checkpassword.js"></script>
+<script src="../js/clock.js"></script>
+</body>
+</html>

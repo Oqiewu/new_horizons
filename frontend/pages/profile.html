@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/styleaction.css">
+	<link rel="stylesheet" type="text/css" href="../css/ListCar.css">
+	<link rel="stylesheet" type="text/css" href="../css/contact.css">
+	<link rel="stylesheet" type="text/css" href="../css/car.css">
+	<link type="image/x-icon" href="../images/icons.ico" rel="shortcut icon">
+	<title>New Horizons - Профиль</title>
+</head>
+<body>
+	<div class="navigation-container">
+		<div class="navigation">
+			<div class="head"><h1>New Horizons</h1></div>
+			<div class="nav-bar-left">
+				<ul class="full-menu">
+					<li>
+						<div class="menu"><a href="main-action.html">На главную</a></div>
+					</li>
+					<li>
+						<div class="menu"><a href="ListCar.html">Автомобили</a></div>
+					</li>
+					<li>
+						<ul class="menu-down">
+							<li><a href="#" class="pull">Владельцам</a>
+								<ul>
+									<li><a href="service.html">Cервис</a></li>
+									<li><a href="guarantee.html">Гарантия</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="menu-down">
+							<li><a href="#" class="pull">О нас</a>
+								<ul>
+									<li><a href="company.html">Компания</a></li>
+									<li><a href="contact.html">Контакты</a></li>
+									<li><a href="feedback.html">Отзывы</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="nav-bar-right">
+				<ul class="profile-menu" >
+					<li>
+						<div class="profile"><img src="../images/profile.png"></div>
+						<ul>
+							<li><a href="#">Профиль</a></li>
+							<li><a id="exit" href="http://newhorizons">Выход</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+	</div>
+
+	</div>
+	<div class="main-container border">
+		<div class="list-car">
+			<h2 class="head-list">Учётная запись</h2>
+			<ul class="list">
+				<li><a href="#settings">Настройка учётной записи</a></li>
+			</ul>
+		</div>
+		<div class="information-block-1">
+			<p class="name-block">Личные данные</p>
+			<form id="profile-form" method="PUT">
+				<div class="fio">
+					<div class="f">
+						<label>ФИО</label><p></p>
+						<input type="text" name="full_name">
+					</div>
+				</div>
+
+			<p class="name-block">Адрес</p>
+				<div class="adress-2">
+					<div class="town">
+						<label>Город</label><p></p>
+						<input type="text" name="town">
+					</div>
+					<div class="region">
+						<label>Регион</label><p></p>
+						<input type="text" name="region">
+					</div>
+					<div class="postal_code">
+						<label>Почтовый индекс</label><p></p>
+						<input type="text" name="postal_code">
+					</div>
+				</div>
+
+			<p class="name-block">Страна</p>
+			<p class="pp">Нажмите здесь, чтобы изменить страну или область.</p>
+				<div class="country">
+					<select id="country" name="country">
+						<option value="">...</option>
+						<option value="США">США</option>
+						<option value="Канада">Канада</option>
+						<option value="Россия">Россия</option>
+						<option value="Великобритания">Великобритания</option>
+						<option value="Франция">Франция</option>
+						<option value="Германия">Германия</option>
+					</select>
+				</div>
+				
+			<div class="bta">
+				<div class="submit">
+					<input type="submit" value="Сохранить изменения">
+				</div>
+			</div>
+			</form>
+
+			<div class="quiz-btn">
+				<a class="quiz-btn-b" href="quiz.html">
+					Викторина
+				</a>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="btn-up btn-up_hide"></div>
+
+	<footer>
+		<div class="social-media">
+				<h4>New Horizons в социальных сетях</h4>
+				<ul>
+					<li><a href=""><img src="../images/social/free-icon-instagram-2111463.png"></a></li>
+					<li><a href=""><img src="../images/social/free-icon-telegram-3670070.png"></a></li>
+					<li><a href=""><img src="../images/social/free-icon-vkontakte-4494517.png"></a></li>
+					<li><a href=""><img src="../images/social/free-icon-youtube-4494485.png"></a></li>
+					<div class="footer-col"></div>
+				</ul>
+		</div>
+		<div class="footer-info">
+			<div class="block">
+				<h4>Автомобили</h4>
+				<ul>
+					<li><a href="ListCar.html">Выбор автомобиля</a></li>
+				</ul>
+			</div>
+			<div class="block">
+				<h4>Владельцам</h4>
+				<ul>
+					<li><a href="service.html">Cервис</a></li>
+					<li><a href="guarantee.html">Гарантия</a></li>
+				</ul>
+			</div>
+			<div class="block">
+				<h4>О нас</h4>
+				<ul>
+					<li><a href="company.html">Компания</a></li>
+					<li><a href="contact.html">Контакты</a></li>
+					<li><a href="feedback.html">Отзывы</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<script src="../js/scroll.js"></script>
+	<script src="../js/clearToken.js"></script>
+	<script src="../js/Queries/ProfileEditQuery.js"></script>
+	<script src="../js/Queries/profileFilling.js"></script>
+	<script src="../js/getCookie.js"></script>
+</body>
+</html>

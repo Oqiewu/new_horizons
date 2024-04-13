@@ -1,0 +1,109 @@
+.back {
+	margin: 25px 0;
+}
+.back a{
+	padding: 5px 20px;
+	background-color: rgba(224, 230, 248, 0.6);
+	border-radius: 20px;
+	text-decoration: none;
+	color: black;
+	font-size: 15pt;
+}
+
+.product-name {
+  display: flex;
+  justify-content: safe center;
+}
+
+.product-name-2 {
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-cart {
+  margin-top: 25px;
+  width: 250px;
+  background-color: rgba(224, 230, 248, 0.5);
+  padding:  9px 20px;
+  border: none;
+  cursor: pointer;
+  font: 16pt Times, Times New Roman, serif;
+  border-radius: 20px;
+}
+
+.car-img {
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.car-img img{
+  width: 100%;
+}
+
+.head-1 {
+  width: 400px;
+  padding: 50px 0;
+  font: 24pt Times, Times New Roman, serif;
+  text-align: center;
+}
+
+.price-car {
+  font-size: 20pt;
+}
+
+.information-car {
+  padding-top: 40px;
+}
+
+.information-car h4{
+  font: 20pt Times, Times New Roman, serif;
+  font-weight: bold;
+  padding: 15px 0;
+}
+
+.information-car p {
+  padding-top: 10px;
+}
+
+.information-car p, .information-car li{
+  font: 18pt Times, Times New Roman, serif;
+}
+
+.information-block-1 ul {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.information-block-1 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.car-info{
+  width: 100%;
+}
+
+.service {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.service img {
+  width: 60%;
+  height: auto;
+}
+
+
+@media (max-width: 1065px) {
+  .product-name {
+    flex-direction: column;
+  }
+
+  .service {
+    flex-direction: column;
+    align-items: center;
+  }
+}

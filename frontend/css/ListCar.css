@@ -1,0 +1,258 @@
+
+.navigation {
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.main-container {
+	position: relative;
+	top: 0;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.head-list {
+	font: 30pt Times, Times New Roman, serif;
+}
+
+.dropdown {
+	font: 30pt Times, Times New Roman, serif;
+}
+
+#toggler, .pro label {
+	display: none;
+}
+
+.list {
+	list-style: none;	
+	display: flex;
+	flex-direction: row;
+	border-bottom: 1px solid #e6e6e6;
+	gap: 25px;
+}
+
+.list li {
+	padding: 20px 12.5px 12.5px 10px;
+}
+
+.list li:hover {
+	transition: 0.3s ease-in-out;
+	border-bottom: 2px solid #00BFFF;
+}
+
+
+
+.list a {
+	text-decoration: none;
+	color: black;
+	font: 20pt Times, Times New Roman, serif;
+}
+
+#BMW, #Mercedes, #Hyundai, #Nissan {
+	text-decoration: underline;
+	padding: 15px 0;
+	font: 20pt Times, Times New Roman, 900;
+}
+
+.products {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.parts-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+
+.parts-container .product {
+
+	border: 3px solid rgba(224, 230, 248, 0.6);
+	position: relative;
+	padding: 20px;
+
+	border-radius: 0.5rem;
+}
+
+.parts-container .product .btns {
+	padding-top: 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.parts-container .product img {
+	width: 100%;
+	height: 170px;
+	object-fit: contain;
+	object-position: center;
+	margin-bottom: 1rem;
+}
+
+.parts-container .product h3, .parts-container .product span{
+	padding: 3px 0;
+	font-size: 1.1rem;
+
+}
+
+.parts-container .product .car-btn {
+	max-width: 120px;
+	color: black;
+  	background-color: rgba(224, 230, 248, 0.6);
+  	padding:  6px 10px;
+  	margin: auto 0;
+  	border: none;
+  	cursor: printer;
+  	border-radius: 20px;
+}
+
+.parts-container .product .details {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	border-bottom: 1.8rem;
+	right: 1rem;
+	font-size: 1rem;
+	color: black;
+}
+
+.colors {
+  display: flex;
+  gap: 10px;
+}
+
+.color {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
+
+
+footer {
+	margin-top: 25px;
+}
+
+
+
+.cart {
+  min-width: 400px;
+
+  padding: 10px 10px 10px 50px;
+}
+
+.cart h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.cart-items {
+	width: 350px;
+  	list-style: none;
+  	padding: 0;
+	margin: 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  font: 14pt Times, Times New Roman, serif;
+}
+
+.cart-item button {
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font: 15pt Times, Times New Roman, serif;
+}
+
+.cart p {
+	max-width: 300px;
+	font: 15pt Times, Times New Roman, serif;
+	border-bottom: 1px solid grey;
+}
+
+.cart-item button:hover {
+  background-color: #ff3333;
+}
+
+.total-price {
+  font-weight: bold;
+  font: 15pt Times, Times New Roman, serif;
+}
+
+.checkout-btn {
+  max-width: 160px;
+  color: black;
+  background-color: rgba(224, 230, 248, 0.6);
+  padding:  6px 10px;
+  margin-top: 15px;
+  border: none;
+  cursor: printer;
+  border-radius: 20px;
+  font: 14pt Times, Times New Roman, serif;
+}
+
+.invisible {
+	display: none;
+}
+
+@media screen and (max-width: 777px) {
+	.car-list {
+		border-bottom: 1px solid #eee;
+		padding-bottom: 10px;
+	}
+
+	.invisible {
+		display: contents;
+	}
+	.products {
+		align-items: center;
+    	flex-direction: column;
+  }
+ 	.cart {
+  		max-width: 500px;
+  }
+
+  .list-car {
+		width: 100%;
+		max-height: 0;
+		overflow: hidden;
+	}
+
+	.list {
+		flex-direction: column;
+		align-items: center;
+		padding: 20px;
+	}
+
+	.pro label {
+		display: inline-flex;
+		align-items: center;
+		cursor: pointer;
+	}
+
+	#toggler:checked ~ .list-car {
+		max-height: 100%;
+	}
+}
+

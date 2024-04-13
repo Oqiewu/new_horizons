@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/styleaction.css">
+	<link rel="stylesheet" type="text/css" href="../css/ListCar.css">
+	<link rel="stylesheet" type="text/css" href="../css/contact.css">
+	<link rel="stylesheet" type="text/css" href="../css/car.css">
+	<link type="image/x-icon" href="../images/icons.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+
+	<title>New Horizons - Профиль</title>
+</head>
+<body>
+	<div class="navigation-container">
+		<div class="navigation">
+			<div class="head"><h1>New Horizons</h1></div>
+			<div class="nav-bar-left">
+				<ul class="full-menu">
+					<li>
+						<div class="menu"><a href="main-action.html">На главную</a></div>
+					</li>
+					<li>
+						<div class="menu"><a href="ListCar.html">Автомобили</a></div>
+					</li>
+					<li>
+						<ul class="menu-down">
+							<li><a href="#" class="pull">Владельцам</a>
+								<ul>
+									<li><a href="service.html">Cервис</a></li>
+									<li><a href="guarantee.html">Гарантия</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="menu-down">
+							<li><a href="#" class="pull">О нас</a>
+								<ul>
+									<li><a href="company.html">Компания</a></li>
+									<li><a href="contact.html">Контакты</a></li>
+									<li><a href="feedback.html">Отзывы</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="nav-bar-right">
+				<ul class="profile-menu" >
+					<li>
+						<div class="profile"><img src="../images/profile.png"></div>
+						<ul>
+							<li><a href="#">Профиль</a></li>
+							<li><a id="exit" href="http://newhorizons">Выход</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+	</div>
+	</div>
+
+    <div class="main-container">
+        <form class="quiz-form">
+            <h2>Викторина по общей эрудиции</h2>
+    
+            <div>
+                <legend>1. Какой химический элемент имеет атомный номер 1?</legend>
+                <fieldset>
+                    <div>
+                        <input type="radio" id="q1_a1" name="question1" value="correct1">
+                        <label for="q1_a1">Водород</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q1_a2" name="question1" value="incorrect">
+                        <label for="q1_a2">Кислород</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q1_a3" name="question1" value="incorrect">
+                        <label for="q1_a3">Углерод</label>
+                    </div>
+                </fieldset>
+            </div>
+    
+            <div>
+                <legend>2. Кто написал роман "1984"?</legend>
+                <fieldset>
+                    <div>
+                        <input type="radio" id="q2_a1" name="question2" value="incorrect">
+                        <label for="q2_a1">Олдос Хаксли</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q2_a2" name="question2" value="correct2">
+                        <label for="q2_a2">Джордж Оруэлл</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q2_a3" name="question2" value="incorrect">
+                        <label for="q2_a3">Рэй Брэдбери</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div>
+                <legend>3. Кто является автором теории относительности?</legend>
+                <fieldset>
+                    <div>
+                        <input type="radio" id="q3_a1" name="question3" value="correct3">
+                        <label for="q3_a1">Альберт Эйнштейн</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q3_a2" name="question3" value="incorrect">
+                        <label for="q3_a2">Исаак Ньютон</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q3_a3" name="question3" value="incorrect">
+                        <label for="q3_a3">Нильс Бор</label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div>
+                <legend>4. Какое животное изображено на гербе Шотландии?</legend>
+                <fieldset>
+                    <div>
+                        <input type="radio" id="q4_a1" name="question4" value="incorrect">
+                        <label for="q4_a1">Лев</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q4_a2" name="question4" value="correct4">
+                        <label for="q4_a2">Единорог</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q4_a3" name="question4" value="incorrect">
+                        <label for="q4_a3">Дракон</label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div>
+                <legend>5. На какой планете Солнечной системы самый короткий день?</legend>
+                <fieldset>
+                    <div>
+                        <input type="radio" id="q5_a1" name="question5" value="incorrect">
+                        <label for="q5_a1">Земля</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q5_a2" name="question5" value="incorrect">
+                        <label for="q5_a2">Марс</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q5_a3" name="question5" value="correct5">
+                        <label for="q5_a3">Юпитер</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q5_a4" name="question5" value="incorrect">
+                        <label for="q5_a4">Венера</label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div>
+                <legend>6. Какой язык программирования был создан Бьёрном Страуструпом?</legend>
+                <fieldset>
+                    <div>
+                        <input type="radio" id="q6_a1" name="question6" value="incorrect">
+                        <label for="q6_a1">Паскаль</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q6_a2" name="question6" value="incorrect">
+                        <label for="q6_a2">С</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q6_a3" name="question6" value="correct6">
+                        <label for="q6_a3">С++</label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div>
+                <legend>7. Кто написал симфонию №9 "Из Нового Света"?</legend>
+                <fieldset>
+                    <div>
+                        <input type="radio" id="q7_a1" name="question7" value="incorrect">
+                        <label for="q7_a1">Людвиг ван Бетховен</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q7_a2" name="question7" value="incorrect">
+                        <label for="q7_a2">Вольфганг Амадей Моцарт</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q7_a3" name="question7" value="correct7">
+                        <label for="q7_a3">Антонин Дворжак</label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div>
+                <legend>8. В какой стране находится гора Килиманджаро?</legend>
+                <fieldset>
+                    <div>
+                        <input type="radio" id="q8_a1" name="question8" value="incorrect">
+                        <label for="q8_a1">Кения</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q8_a2" name="question8" value="correct8">
+                        <label for="q8_a2">Танзания</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q8_a3" name="question8" value="incorrect">
+                        <label for="q8_a3">Уганда</label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div>
+                <legend>9. Какой элемент периодической таблицы имеет наибольшую плотность?</legend>
+                <fieldset>
+                    <div>
+                        <input type="radio" id="q9_a1" name="question9" value="incorrect">
+                        <label for="q9_a1">Золото</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q9_a2" name="question9" value="incorrect">
+                        <label for="q9_a2">Платина</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q9_a3" name="question9" value="correct9">
+                        <label for="q9_a3">Осмий </label>
+                    </div>
+                </fieldset>
+            </div>
+    
+            <div>
+                <legend>10. Какой самый большой океан на Земле?</legend>
+                <fieldset>
+                    <div>
+                        <input type="radio" id="q10_a1" name="question10" value="incorrect">
+                        <label for="q10_a1">Атлантический</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q10_a2" name="question10" value="correct10">
+                        <label for="q10_a2">Тихий</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q10_a3" name="question10" value="incorrect">
+                        <label for="q10_a3">Индийский</label>
+                    </div>
+                </fieldset>
+            </div>
+    
+            <button type="submit">Проверить мои результаты</button>
+        </form>
+    </div>
+    
+	<div class="btn-up btn-up_hide"></div>
+
+	<footer>
+		<div class="social-media">
+				<h4>New Horizons в социальных сетях</h4>
+				<ul>
+					<li><a href=""><img src="../images/social/free-icon-instagram-2111463.png"></a></li>
+					<li><a href=""><img src="../images/social/free-icon-telegram-3670070.png"></a></li>
+					<li><a href=""><img src="../images/social/free-icon-vkontakte-4494517.png"></a></li>
+					<li><a href=""><img src="../images/social/free-icon-youtube-4494485.png"></a></li>
+					<div class="footer-col"></div>
+				</ul>
+		</div>
+		<div class="footer-info">
+			<div class="block">
+				<h4>Автомобили</h4>
+				<ul>
+					<li><a href="ListCar.html">Выбор автомобиля</a></li>
+				</ul>
+			</div>
+			<div class="block">
+				<h4>Владельцам</h4>
+				<ul>
+					<li><a href="service.html">Cервис</a></li>
+					<li><a href="guarantee.html">Гарантия</a></li>
+				</ul>
+			</div>
+			<div class="block">
+				<h4>О нас</h4>
+				<ul>
+					<li><a href="company.html">Компания</a></li>
+					<li><a href="contact.html">Контакты</a></li>
+					<li><a href="feedback.html">Отзывы</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<script src="../js/scroll.js"></script>
+	<script src="../js/clearToken.js"></script>
+	<script src="../js/getCookie.js"></script>
+    <script src="../js/quiz.js"></script>
+</body>
+</html>
